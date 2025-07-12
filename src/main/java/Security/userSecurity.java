@@ -9,9 +9,13 @@ public class userSecurity {
     public String home(){
         return "Home page";
     }
-    @GetMapping("/secured")
+    @GetMapping("/admin")
     public String secured(){
-        return "Page Secured";
+        return "hello admin";
+    }
+    @GetMapping("/user")
+    public String users(){
+        return "hello user";
     }
     
 }
